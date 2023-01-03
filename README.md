@@ -1,2 +1,2 @@
 # TP-Android-Kotlin
-TP Android Yoanis
+TP Android Yoanis Lance étudiant en Licence MI
