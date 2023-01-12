@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Swapi</string>
+    <string name="personnage">Personnage</string>
+    <string name="planete">Planete</string>
+    <string name="vaisseau">Vaisseau</string>
+    <string name="pendu">Pendu</string>
+</resources>
