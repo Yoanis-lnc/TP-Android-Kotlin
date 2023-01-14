@@ -21,11 +21,13 @@ class MainActivity : AppCompatActivity() {
         val mediaPlayer = MediaPlayer.create(this, R.raw.starwars)
         mediaPlayer.start()
 
-
+        //Initialisation retrofit
         val retrofit = Retrofit.Builder()
             .baseUrl("https://swapi.dev/api/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
+
+
 
 
     }
