@@ -9,7 +9,7 @@
     android:gravity="center">
 
     <Button
-        android:id="@+id/personnage"
+        android:id="@+id/personneBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/personnage"
@@ -18,7 +18,7 @@
         app:iconSize="25dp"/>
 
     <Button
-        android:id="@+id/planete"
+        android:id="@+id/planeteBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/planete"
@@ -27,7 +27,7 @@
         app:iconSize="25dp"/>
 
     <Button
-        android:id="@+id/vaisseau"
+        android:id="@+id/vaisseauBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/vaisseau"

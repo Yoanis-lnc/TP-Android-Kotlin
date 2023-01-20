@@ -1,16 +1,16 @@
 package com.example.swapi
 
+import android.content.Intent
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import retrofit2.Call
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.http.GET
-import retrofit2.http.Path
+import android.widget.Button
+
 
 class MainActivity : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -21,15 +21,26 @@ class MainActivity : AppCompatActivity() {
         val mediaPlayer = MediaPlayer.create(this, R.raw.starwars)
         mediaPlayer.start()
 
-        //Initialisation retrofit
-        val retrofit = Retrofit.Builder()
-            .baseUrl("https://swapi.dev/api/")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
+        val personneBtn: Button = findViewById(R.id.personneBtn)
 
+        personneBtn.setOnClickListener {
+            val personneIntent = Intent(this, PersonnageActivity::class.java)
+            startActivity(personneIntent)
+        }
 
+        val vaisseauBtn: Button = findViewById(R.id.vaisseauBtn)
 
+       vaisseauBtn.setOnClickListener {
+            val vaisseauIntent = Intent(this, VehicleActivity::class.java)
+            startActivity(vaisseauIntent)
+        }
 
+        val planeteBtn: Button = findViewById(R.id.planeteBtn)
+
+        planeteBtn.setOnClickListener {
+            val planeteIntent = Intent(this, PlaneteActivity::class.java)
+            startActivity(planeteIntent)
+        }
     }
 
 }
